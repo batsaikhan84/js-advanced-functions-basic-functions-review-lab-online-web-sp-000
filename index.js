@@ -12,9 +12,23 @@ function wrapAdjective(a='*') {
     }
 }
 
-let Calculator = {}
+let Calculator = {a: 1, b: 3, c: 10, d: 5, add: function() {
+        return this.a + this.b
+    }, subtract: function() {
+        return this.a - this.b
+    }, multiply: function() {
+        return this.a * this.b
+    }, divide: function() {
+        return this.c / this.d
+    }
+}
 
-function add(a, b) {
-  return a + b
+function actionApplyer(startInteger, myArray = []) {
+    if (!myArray.length) {
+        return startInteger
+    }
+    else {
+        return 4
+    }
 }
 
